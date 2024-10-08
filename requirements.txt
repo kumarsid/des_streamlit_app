@@ -7,3 +7,4 @@ streamlit==1.37.0
 geopandas==1.0.1
 folium==0.17.0
 streamlit_folium==0.22.0
+setuptools==65.5.0
