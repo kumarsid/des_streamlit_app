@@ -20,9 +20,11 @@ if 'iat_calls' not in st.session_state:
 if 'iat_walkins' not in st.session_state:
     st.session_state.iat_walkins = None
 
-patient_iat_slider = st.session_state.iat_calls
+patient_iat_slider = st.slider("What is the number of patient iat?",
+                              min_value=1, max_value=10, value=1)
 
-patient_consult_slider = st.session_state.iat_walkins
+patient_consult_slider = st.slider("What is the number of patient consult?",
+                              min_value=1, max_value=10, value=1)
 
 num_nurses_slider = st.slider("What is the number of nurses in the system?",
                               min_value=1, max_value=10, value=1)
